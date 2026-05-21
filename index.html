@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desbravapp Home</title>
+    <link rel="stylesheet" href="Styles/base.css">
+    <link rel="stylesheet" href="Styles/sidebar.css">
+    <link rel="stylesheet" href="Styles/accordion.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="nav-menu">
+                <a class="nav-button active" href="Index.html">Início</a>
+                <a class="nav-button" href="Jogos_Lúdicos.html">Jogos lúdicos</a>
+                <a class="nav-button" href="Selo.html">Pontos Atuais</a>
+                <a class="nav-button" href="contato.html">Fale conosco</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="main-header">
+                <div>
+                    <h1>Bem vindo ao desbravapp Online</h1>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" type="button">Dark Mode</button>
+            </div>
+            <h2>Locais</h2>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">Cachoeira do Urubu</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="conteudo-local">
+                    <img src="Img/urubu.jpg" alt="Cachoerira do Urubu"  width="600" height="300">
+                    <p>A Cachoeira do Xixá fica a apenas 9 km do centro de Batalha, no povoado de mesmo nome, com paredões de pedras de 10 metros que formam quedas d'água e uma bela piscina natural. O nome vem de uma planta nativa do cerrado piauiense de flores avermelhadas. Eleita uma das 7 Maravilhas do Piauí, conta com estacionamento, restaurante e banheiros. A entrada é gratuita e a melhor época para visitar é de fevereiro a maio, quando o volume d'água está no auge.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">Pedra Branca</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                         <div class="conteudo-local">
+                        <img src="Img/Branca.webp" alt="Pedra Branca" width="600" height="300">
+                        <p>A Pedra Branca é um refúgio natural em Batalha, com piscina natural de águas cristalinas cercada por formações rochosas e vegetação nativa, que chama atenção pela transparência da água e clima de sossego. O espaço é frequentado especialmente nos fins de semana para banhos, piqueniques e churrascos com amigos e família.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">Cachoeira do Xixá</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="conteudo-local">
+                            <img src="Img/Xixá.jpeg" alt="Cachoeira do Xixá" width="600" height="300">
+                            <p>A Cachoeira do Urubu fica na divisa de Batalha e Esperantina, formada pelas águas do Rio Longá com cascatas de até 12 metros, sendo a mais famosa do Piauí. O nome vem da piracema, quando peixes que sobem as corredeiras viram presa fácil para os urubus. A melhor época para visitar é de janeiro a julho — nos primeiros meses a paisagem é exuberante, e de maio a julho o banho é mais seguro. O acesso por Batalha é fácil, via BR-222, com cerca de 9 km de estrada asfaltada até o parque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            document.querySelectorAll('.accordion-header').forEach(button => {
+                button.addEventListener('click', () => {
+                    const item = button.parentElement;
+                    const isActive = item.classList.contains('active');
+                    
+                    document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+                    
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+
+            const themeToggle = document.getElementById('theme-toggle');
+            const pageBody = document.body;
+            themeToggle.addEventListener('click', () => {
+                const isDark = pageBody.classList.toggle('dark-mode');
+                themeToggle.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+            });
+        </script>
+    </div>
+
+</body>
+</html>
+
