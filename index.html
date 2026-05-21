@@ -13,7 +13,7 @@
         <aside class="sidebar">
             <nav class="nav-menu">
                 <a class="nav-button active" href="Index.html">Início</a>
-                <a class="nav-button" href="Jogos_Lúdicos.html">Jogos lúdicos</a>
+                <a class="nav-button" href="Jogos_Lúdicos.html">Jogos Lúdicos</a>
                 <a class="nav-button" href="Selo.html">Pontos Atuais</a>
                 <a class="nav-button" href="contato.html">Fale conosco</a>
             </nav>
@@ -21,7 +21,7 @@
         <main class="main-content">
             <div class="main-header">
                 <div>
-                    <h1>Bem vindo ao desbravapp Online</h1>
+                    <h1>Bem vindo ao DesbraVapp Online</h1>
                 </div>
                 <button id="theme-toggle" class="theme-toggle" type="button">Dark Mode</button>
             </div>
@@ -63,6 +63,30 @@
                         </div>
                     </div>
                 </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">Cachoeira do Canta Galo</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="conteudo-local">
+                            <img src="Img/Galo.jpg" alt="Cachoeira do Canta Galo" width="600" height="300">
+                            <p>A Cachoeira do Canta Galo é uma das principais atrações turísticas de Batalha, localizada no povoado de mesmo nome. A cachoeira é composta por várias quedas d'água e uma piscina natural com águas cristalinas, ideal para banhos e lazer. O acesso é feito por estrada de terra, com cerca de 15 km de distância do centro da cidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">Cachoeira do Almeida</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="conteudo-local">
+                            <img src="Img/Almeida.jpeg" alt="Cachoeira do Almeida" width="600" height="300">
+                           <p> A Cachoeira dos Almeidas fica a apenas 300 metros da Cachoeira do Xixá, em Batalha, tornando as duas um passeio natural combinado. Diferente das outras cachoeiras da região, não possui quedas d'água altas, mas conta com cascatas acessíveis e refrescantes tanto para crianças quanto para adultos. Trata-se de uma propriedade privada transformada pelos donos em espaço de lazer, com boa estrutura de atendimento, restaurante com pratos típicos como galinhada caipira e peixada de surubim do Rio Longá. Possui piscina natural, bar e restaurante à beira do riacho, e o acesso é gratuito mesmo sendo área privada. Ideal para um passeio tranquilo em família.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
@@ -80,15 +104,9 @@
                 });
             });
 
-            const themeToggle = document.getElementById('theme-toggle');
-            const pageBody = document.body;
-            themeToggle.addEventListener('click', () => {
-                const isDark = pageBody.classList.toggle('dark-mode');
-                themeToggle.textContent = isDark ? 'Light Mode' : 'Dark Mode';
-            });
         </script>
     </div>
-
+    <script src="tema.js"></script>
 </body>
 </html>
 

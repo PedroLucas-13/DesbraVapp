@@ -148,4 +148,5 @@ guessInput.addEventListener('keyup', (event) => {
 });
 resetButton.addEventListener('click', resetGame);
 resetGame();
+
  
