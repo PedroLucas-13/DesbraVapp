@@ -47,10 +47,9 @@
 .tema:hover,
 .theme-toggle:hover            { background-color: var(--toggle-hover); transform: translateY(-1px); }
 
-/* ── Dark mode ── */
 body.dark-mode .sidebar              { background-color: #111827; }
 body.dark-mode .nav-button           { background-color: #334155; color: #f8fafc; }
-body.dark-mode .nav-button:hover     { background-color: #2563eb; }
+body.dark-mode .nav-button:hover     { background-color: #2d5a3d; }
 body.dark-mode .tema,
 body.dark-mode .theme-toggle         { background-color: #334155; color: #f8fafc; }
 body.dark-mode .tema:hover,
