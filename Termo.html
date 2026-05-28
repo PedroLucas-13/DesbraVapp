@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="Styles/base.css">
     <link rel="stylesheet" href="Styles/sidebar.css">
     <link rel="stylesheet" href="Styles/termo.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+</head>
 </head>
 <body>
     <div class="container">
@@ -36,7 +38,27 @@
             <p id="message" class="Termo-status"></p>
         </main>
     </div>
-     <script src="Termo.js"></script> 
+     <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">Desbravapp</span>
+                <span class="footer-school">CETI - GA</span>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-info">
+                <a href="mailto:desbravapp01@gmail.com" class="footer-email">
+                    desbravapp01@gmail.com
+                </a>
+                <span class="footer-copy">© <span id="footer-year"></span> Desbravapp — Todos os direitos reservados</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
+    
+ <script src="Termo.js"></script> 
      <script src="tema.js"></script>
 </body>
 </html>

@@ -1,0 +1,83 @@
+.site-footer {
+  background-color: var(--panel);
+  color: #c8dfc8;
+  padding: 20px 32px;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.footer-school {
+  font-size: 0.78rem;
+  color: #a8c8a8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer-divider {
+  width: 1px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.footer-email {
+  color: #a8e6a8;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.footer-email:hover {
+  color: #ffffff;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: #88aa88;
+}
+
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-divider {
+    width: 80px;
+    height: 1px;
+  }
+
+  .footer-info {
+    align-items: center;
+  }
+}

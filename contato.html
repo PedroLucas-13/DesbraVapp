@@ -6,6 +6,7 @@
     <title>Fale conosco - Desbravapp</title>
     <link rel="stylesheet" href="Styles/base.css">
     <link rel="stylesheet" href="Styles/sidebar.css">
+    <link rel="stylesheet" href="Styles/footer.css">
 
 </head>
 <body>
@@ -27,8 +28,8 @@
             </div>
             <div class="info-card">
                 <h1>Contato</h1>
-                <p>E-mail: contato@desbravapp.com.br</p>
-                <p>Telefone: (11) 1234-5678</p>
+                <p>E-mail: desbravapp01@gmail.com</p>
+                <p>Telefone: (86) 1234-5678</p>
             </div>
             <div class="page-panel">
                 <h1>Envie sua mensagem</h1>
@@ -36,6 +37,26 @@
             </div>
         </main>
     </div>
+     <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">Desbravapp</span>
+                <span class="footer-school">CETI - GA</span>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-info">
+                <a href="mailto:desbravapp01@gmail.com" class="footer-email">
+                    desbravapp01@gmail.com
+                </a>
+                <span class="footer-copy">© <span id="footer-year"></span> Desbravapp — Todos os direitos reservados</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
+
  <script src="tema.js"></script>
 </body>
 </html>
