@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Styles/base.css">
     <link rel="stylesheet" href="Styles/sidebar.css">
     <link rel="stylesheet" href="Styles/quiz.css">
+    <link rel="stylesheet" href="Styles/footer.css">
 </head>
 <body>
     <div class="container">
@@ -30,7 +31,6 @@
 
             <div class="quiz-wrapper">
 
-                <!-- Tela do Quiz -->
                 <div id="quiz-screen">
                     <div class="progress-wrap">
                         <div class="progress-info">
@@ -50,12 +50,30 @@
                     </div>
                 </div>
 
-                <!-- Tela de Resultado -->
                 <div id="result-screen" style="display: none;"></div>
 
             </div>
         </main>
     </div>
+     <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">Desbravapp</span>
+                <span class="footer-school">CETI - GA</span>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-info">
+                <a href="mailto:desbravapp01@gmail.com" class="footer-email">
+                    desbravapp01@gmail.com
+                </a>
+                <span class="footer-copy">© <span id="footer-year"></span> Desbravapp — Todos os direitos reservados</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
 
     <script src="quiz.js"></script>
     <script src="tema.js"></script>
