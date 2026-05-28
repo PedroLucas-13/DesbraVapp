@@ -96,3 +96,37 @@ body.dark-mode .main-content h2 { color: #c8e6c9; }
 
 body.dark-mode .accordion-header { color: #c8e6c9; }
 body.dark-mode .accordion-content p { color: #a5d6a7; }
+
+/* Google Maps Button */
+.google-maps-btn {
+    display: inline-block;
+    background-color: var(--panel);
+    color: var(--panel-text);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: all 0.3s ease;
+}
+
+.google-maps-btn:hover {
+    background-color: var(--button-hover);
+    text-decoration: none;
+    color: var(--panel-text);
+}
+
+.google-maps-btn:active {
+    background-color: var(--button-active);
+}
+
+body.dark-mode .google-maps-btn {
+    background-color: var(--panel-alt);
+}
+
+body.dark-mode .google-maps-btn:hover {
+    background-color: var(--button-hover);
+}
