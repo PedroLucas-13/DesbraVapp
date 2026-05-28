@@ -20,7 +20,7 @@ const questions = [
         points: 15
     },
     {
-        q: "Qual é a melhor época para visitar a Cachoeira do Urubu com segurança para banho?",
+        q: "Qual é a melhor época para visitar a Cachoeira do Urubu?",
         opts: ["Agosto a dezembro", "Maio a julho", "Janeiro e fevereiro", "O ano todo igualmente"],
         ans: 1,
         points: 10
