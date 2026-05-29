@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="Styles/base.css">
     <link rel="stylesheet" href="Styles/sidebar.css">
     <link rel="stylesheet" href="Styles/selo.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    
 </head>
 <body>
     <div class="container">
@@ -28,7 +30,6 @@
             </div>
 
             <div class="editor-container">
-                <!-- Upload Section -->
                 <div class="upload-section">
                     <h3>1. Escolha uma foto</h3>
                     <div class="file-input-wrapper">
@@ -37,8 +38,6 @@
                     </div>
                     <p class="info-message">Formatos aceitos: JPG, PNG, GIF, WebP</p>
                 </div>
-
-                <!-- Seal Position Control -->
                 <div class="seal-position-control hidden" id="positionControl">
                     <label>2. Escolha a posição do selo:</label>
                     <div class="position-buttons">
@@ -47,15 +46,11 @@
                         <button class="position-btn" data-position="bottom-center">Centro inferior</button>
                     </div>
                 </div>
-
-                <!-- Preview Section -->
                 <div class="preview-section hidden" id="previewSection">
                     <h3>3. Pré-visualização</h3>
                     <div id="canvas-container">
                         <canvas id="previewCanvas"></canvas>
                     </div>
-
-                    <!-- Controls -->
                     <div class="controls-section">
                         <button class="download-btn" id="downloadBtn">Baixar Foto com Selo</button>
                         <button class="reset-btn" id="resetBtn">Carregar outra foto</button>
@@ -64,6 +59,25 @@
             </div>
         </main>
     </div>
+     <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">Desbravapp</span>
+                <span class="footer-school">CETI - GA</span>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-info">
+                <a href="mailto:desbravapp01@gmail.com" class="footer-email">
+                    desbravapp01@gmail.com
+                </a>
+                <span class="footer-copy">© <span id="footer-year"></span> Desbravapp — Todos os direitos reservados</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
 
 <script src="ediSelo.js"></script>
  <script src="tema.js"></script>

@@ -1,4 +1,3 @@
-// Elements
 const photoInput = document.getElementById('photoInput');
 const uploadBtn = document.querySelector('.upload-btn');
 const previewCanvas = document.getElementById('previewCanvas');
@@ -8,17 +7,14 @@ const previewSection = document.getElementById('previewSection');
 const positionControl = document.getElementById('positionControl');
 const positionBtns = document.querySelectorAll('.position-btn');
 
-// State
 let uploadedImage = null;
 let sealImage = null;
 let currentPosition = 'bottom-right';
 
-// Load seal image on page load
 window.addEventListener('load', () => {
     loadSealImage();
 });
 
-// File upload handler
 uploadBtn.addEventListener('click', () => {
     photoInput.click();
 });
@@ -41,7 +37,6 @@ photoInput.addEventListener('change', (event) => {
     }
 });
 
-// Load seal image
 function loadSealImage() {
     const img = new Image();
     img.onload = () => {
@@ -53,7 +48,6 @@ function loadSealImage() {
     img.src = 'img/SELO.png';
 }
 
-// Position button handlers
 positionBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
         positionBtns.forEach((b) => b.classList.remove('active'));
@@ -63,13 +57,10 @@ positionBtns.forEach((btn) => {
     });
 });
 
-// Render preview canvas
 function renderPreview() {
     if (!uploadedImage || !sealImage) return;
 
     const ctx = previewCanvas.getContext('2d');
-    
-    // Set canvas size to match image aspect ratio
     const maxWidth = 600;
     const maxHeight = 600;
     let width = uploadedImage.width;
@@ -87,14 +78,11 @@ function renderPreview() {
     previewCanvas.width = width;
     previewCanvas.height = height;
     
-    // Draw image
     ctx.drawImage(uploadedImage, 0, 0, width, height);
     
-    // Calculate seal size (10% of image width, maintaining aspect ratio)
     const sealWidth = width * 0.15;
     const sealHeight = (sealImage.height * sealWidth) / sealImage.width;
     
-    // Calculate position
     const padding = 15;
     let x, y;
     
